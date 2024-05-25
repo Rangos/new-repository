@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'import_export',
     'bootstrap3',
     'django_filters',
+    'django_pandas',
     
 ]
 

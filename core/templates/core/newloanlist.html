@@ -1,0 +1,23 @@
+{% block content %}
+<html>
+    <head>
+        <title>List of loans</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+		
+    </head>
+	<body>
+  <h1>loan List</h1>
+  {% if loan_list %}
+    <ul>
+      {% for loan in loan_list %}
+      <li>
+        <a href="{% url 'loan-detail' loan.pk %}">{{ loan.id }}</a>
+        {{loan.loan_amount}}-- {{loan.due_date}}
+      </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>There are no loans in the library.</p>
+  {% endif %}
+  </body>
+{% endblock %}

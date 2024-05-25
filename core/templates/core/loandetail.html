@@ -1,0 +1,19 @@
+{% block content %}
+<html>
+    <head>
+        <title>loan Details</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    </head>
+	<body>
+  <h1> Customer Id :{{ object.customer_id }}</h1>
+
+  <p><strong>Loan date:</strong> <a href="">{{ object.loan_date}}</a></p>
+  <p><strong>Due date:</strong> <a href="">{{ object.due_date}}</a></p>
+  <!-- author detail link not yet defined -->
+  <p><strong>Loan:</strong> {{ object.loan_amount }}</p>
+  <p><strong>Loan code:</strong> {{ object.loan_code}}</p>
+ <p><strong>Loan status:</strong> {{ object.loan_status}}</p>
+<p><strong>Customer station :</strong> {{ object.customer_station }}</p>
+   </body>
+ 
+{% endblock %}
