@@ -1,0 +1,6 @@
+Data anaysis wed application, this applcation can perfom diffrent operations on data imported  to produce statistical information that is relevant to the organiasation
+Supports import and export of data in diffrent formats (excel,csv )etc
+Filter data according to organisation needs to produce reports in form of graphs and tables 
+Efficient and highly scalabe
+Key technology used: Python/Django framework , MYSQL database, API intergration using REST framework, python libraries(pandas, numpy) , frontend (HTML,JQUEY,BOOTSTRAP)
+, Docker containers
